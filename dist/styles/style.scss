@@ -107,7 +107,7 @@ header>.container {
     transform: translate(-50%, -45%);
     text-align: center;
 
-    & h1 {
+    h1 {
         font-family: "Niconne", cursive;
         color: $primary;
     }
@@ -137,23 +137,54 @@ header>.container {
 }
 
 .section1 {
-    & h6 {
+    h6 {
         text-transform: uppercase;
         font-weight: 600;
         font-size: .8rem;
     }
-    & h1{
+    h1{
         font-family: "Niconne", cursive;
         color: $primary;
     }
-    & p, li {
+    p, li {
         font-family: "cambria", sans-serif;
     }
-    & a {
+    a {
         @extend .btn;
         width: 150px;
         color: $primary !important;
     }
+}
+
+.section2{ 
+    background: $background;
+    i {
+        color: $primary;
+        padding: 1rem;
+    }
+    h4 {
+        font-size: 1rem;
+        font-family: "copperplate Gothic", sans-serif;
+        font-weight: 600;
+    }
+    p {
+        font-size: .7rem;
+        font-family: "cambria", sans-serif;
+        opacity: .5;
+    }
+    .sub-title {
+        p {
+            text-transform: uppercase;
+            opacity: 1;
+            font-weight: 600;
+        }
+        h5 {
+            font-family: "Niconne", cursive;
+            color: $primary;
+            font-size: 2rem;
+        }
+    }
+    
 }
 
 footer {

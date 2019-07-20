@@ -169,6 +169,39 @@ header > .container {
   color: #C69963 !important;
 }
 
+.section2 {
+  background: #101D2C;
+}
+
+.section2 i {
+  color: #C69963;
+  padding: 1rem;
+}
+
+.section2 h4 {
+  font-size: 1rem;
+  font-family: "copperplate Gothic", sans-serif;
+  font-weight: 600;
+}
+
+.section2 p {
+  font-size: .7rem;
+  font-family: "cambria", sans-serif;
+  opacity: .5;
+}
+
+.section2 .sub-title p {
+  text-transform: uppercase;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.section2 .sub-title h5 {
+  font-family: "Niconne", cursive;
+  color: #C69963;
+  font-size: 2rem;
+}
+
 footer {
   color: #C69963;
   background: #101D2C;
