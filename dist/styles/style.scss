@@ -28,14 +28,20 @@ header>.container {
 .navbar-brand {
     position: absolute;
     width: 100%;
-    max-width: 100px;
-    top: 10px;
+    max-width: 300px;
+    top: 12.5px;
     left: 50%;
     transform: translateX(-50%);
     transition: opacity 650ms;
+    text-align: center;
 
     &:hover {
-        opacity: .8;
+        opacity: .5;
+    }
+
+    & img {
+        width: 300px;
+        height: 80px;
     }
 }
 
@@ -124,7 +130,35 @@ header>.container {
         background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .4), transparent);
         transition: all 650ms;
     }
+
     &:hover::before {
         left: 100%;
     }
+}
+
+.section1 {
+    & h6 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: .8rem;
+    }
+    & h1{
+        font-family: "Niconne", cursive;
+        color: $primary;
+    }
+    & p, li {
+        font-family: "cambria", sans-serif;
+    }
+    & a {
+        @extend .btn;
+        width: 150px;
+        color: $primary !important;
+    }
+}
+
+footer {
+    color: $primary;
+    background: $background;
+    font-family: "cambria", san-serif;
+    font-size: .8rem;
 }

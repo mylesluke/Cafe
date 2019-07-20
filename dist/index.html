@@ -8,7 +8,7 @@
     <title>Sue's Tasties | Buffets in Wigan</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/aos.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -20,7 +20,7 @@
                 <i class="fas fa-times toggle"></i>
             </div>
             <nav class="d-flex align-items-center justify-content-center">
-                <a navbar-brand href="index.html">
+                <a class="navbar-brand" href="index.html">
                     <img class="img-fluid" src="images/logo.png" alt="Logo">
                 </a>
                 <ul class="nav-list text-center p-0">
@@ -43,6 +43,35 @@
             </div>
         </div>
     </header>
+    <main>
+        <div class="section1 px-5 my-5 d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div data-aos="fade-right" class="col-sm-6">
+                    <h6>Discover</h6>
+                    <h1>What we do</h1>
+                    <p class="mb-4">We cater for all events including...</p>
+                    <ul>
+                        <li>Weddings</li>
+                        <li>Christenings</li>
+                        <li>Funerals</li>
+                        <li>Birthdays</li>
+                        <li>Engagements</li>
+                        <li>Business Meetings</li>
+                        <li>Office Parties</li>
+                    </ul>
+                    <a class="btn" href="#">Find out more</a>
+                </div>
+                <div data-aos="fade-left" class="col-sm-6 d-flex justify-content-center align-items-center">
+                    <img class="img-fluid my-5 " src="./images/image1.png" alt="Photo">
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+
+        </div>
+    </main>
+    <footer class="text-center py-4">Sue's Tasties | &copy; 2019</footer>
+
 
 
 
@@ -56,8 +85,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="./js/menu.js" type="text/javascript"></script>
+    <script src="./js/aos.js" type="text/javascript"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

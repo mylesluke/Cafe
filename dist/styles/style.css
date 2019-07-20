@@ -26,17 +26,23 @@ header > .container {
 .navbar-brand {
   position: absolute;
   width: 100%;
-  max-width: 100px;
-  top: 10px;
+  max-width: 300px;
+  top: 12.5px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-transition: opacity 650ms;
   transition: opacity 650ms;
+  text-align: center;
 }
 
 .navbar-brand:hover {
-  opacity: .8;
+  opacity: .5;
+}
+
+.navbar-brand img {
+  width: 300px;
+  height: 80px;
 }
 
 .hamburger-menu {
@@ -119,7 +125,7 @@ header > .container {
   color: #C69963;
 }
 
-.btn {
+.btn, .section1 a {
   width: 100px;
   padding: 5px 0 !important;
   border: 1px solid #C69963;
@@ -127,7 +133,7 @@ header > .container {
   overflow: hidden;
 }
 
-.btn::before {
+.btn::before, .section1 a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -139,7 +145,34 @@ header > .container {
   transition: all 650ms;
 }
 
-.btn:hover::before {
+.btn:hover::before, .section1 a:hover::before {
   left: 100%;
+}
+
+.section1 h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+.section1 h1 {
+  font-family: "Niconne", cursive;
+  color: #C69963;
+}
+
+.section1 p, .section1 li {
+  font-family: "cambria", sans-serif;
+}
+
+.section1 a {
+  width: 150px;
+  color: #C69963 !important;
+}
+
+footer {
+  color: #C69963;
+  background: #101D2C;
+  font-family: "cambria", san-serif;
+  font-size: .8rem;
 }
 /*# sourceMappingURL=style.css.map */
