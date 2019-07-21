@@ -125,7 +125,7 @@ header > .container {
   color: #C69963;
 }
 
-.btn, .section1 a {
+.btn, .about a {
   width: 100px;
   padding: 5px 0 !important;
   border: 1px solid #C69963;
@@ -133,7 +133,7 @@ header > .container {
   overflow: hidden;
 }
 
-.btn::before, .section1 a::before {
+.btn::before, .about a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -145,58 +145,69 @@ header > .container {
   transition: all 650ms;
 }
 
-.btn:hover::before, .section1 a:hover::before {
+.btn:hover::before, .about a:hover::before {
   left: 100%;
 }
 
-.section1 h6 {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: .8rem;
+section {
+  padding: 3rem 5rem;
 }
 
-.section1 h1 {
+.about {
+  font-family: "cambria", sans-serif;
+}
+
+.about .section-heading h6 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-family: "Teko", sans-serif;
+  line-height: 0;
+}
+
+.about .section-heading h1 {
   font-family: "Niconne", cursive;
   color: #C69963;
 }
 
-.section1 p, .section1 li {
-  font-family: "cambria", sans-serif;
-}
-
-.section1 a {
+.about a {
   width: 150px;
   color: #C69963 !important;
 }
 
-.section2 {
+.about a:hover {
+  color: #fff !important;
+  background-color: #C69963;
+}
+
+.contact {
   background: #101D2C;
 }
 
-.section2 i {
+.contact i {
   color: #C69963;
   padding: 1rem;
 }
 
-.section2 h4 {
+.contact h4 {
   font-size: 1rem;
   font-family: "copperplate Gothic", sans-serif;
   font-weight: 600;
 }
 
-.section2 p {
+.contact p {
   font-size: .7rem;
   font-family: "cambria", sans-serif;
   opacity: .5;
 }
 
-.section2 .sub-title p {
+.contact .sub-title p {
   text-transform: uppercase;
   opacity: 1;
   font-weight: 600;
 }
 
-.section2 .sub-title h5 {
+.contact .sub-title h5 {
   font-family: "Niconne", cursive;
   color: #C69963;
   font-size: 2rem;
