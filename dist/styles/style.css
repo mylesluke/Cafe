@@ -145,14 +145,10 @@ header > .container {
 }
 
 section {
-  padding: 3rem 5rem;
+  padding: 3rem 0;
 }
 
-.about {
-  font-family: "cambria", sans-serif;
-}
-
-.about .section-heading h6 {
+section .section-heading h6 {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 1px;
@@ -160,9 +156,13 @@ section {
   line-height: 0;
 }
 
-.about .section-heading h1 {
+section .section-heading h1 {
   font-family: "Niconne", cursive;
   color: #C69963;
+}
+
+.about {
+  font-family: "cambria", sans-serif;
 }
 
 .about a {
@@ -196,16 +196,46 @@ section {
   opacity: 0.5;
 }
 
-.contact .sub-title p {
-  text-transform: uppercase;
-  opacity: 1;
-  font-weight: 600;
+.contact .point-right,
+.contact .point-left {
+  position: relative;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.contact .sub-title h5 {
-  font-family: "Niconne", cursive;
+.contact .point-left::before,
+.contact .point-right::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: inherit;
+  top: -12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+  z-index: 1;
+}
+
+.contact .menu-item {
+  padding: 50px 10px;
   color: #C69963;
-  font-size: 2rem;
+  margin: auto;
+}
+
+.contact .menu-item h6 {
+  color: #C69963;
+  font-size: 20px;
+}
+
+.contact .menu-item h1 {
+  color: #101D2C;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
 }
 
 footer {
@@ -215,7 +245,7 @@ footer {
   font-size: .8rem;
 }
 
-@media (max-width: 567px) {
+@media (max-width: 576px) {
   .navbar-brand {
     max-width: 300px;
   }
@@ -224,6 +254,13 @@ footer {
 @media (min-width: 768px) {
   .btn, .about a {
     width: 150px;
+  }
+  .point-left::before,
+  .point-right::before {
+    display: none;
+  }
+  .menu-item {
+    padding: 50px 20px;
   }
 }
 
@@ -283,6 +320,31 @@ footer {
   .nav-link:hover::before {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
+  }
+  .point-left::before,
+  .point-right::before {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .point-left::before,
+  .point-right::before {
+    display: block;
+    top: 40% !important;
+    left: initial !important;
+    -webkit-transform: translate(0, 50%) rotate(45deg) !important;
+            transform: translate(0, 50%) rotate(45deg) !important;
+  }
+  .point-left::before {
+    left: -12px !important;
+  }
+  .point-right::before {
+    right: -12px !important;
+  }
+  .menu-item .btn, .menu-item .about a, .about .menu-item a {
+    color: #fff !important;
+    background: #C69963;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -132,12 +132,9 @@ header>.container {
     }
 }
 
+// overall section style
 section {
-    padding: 3rem 5rem;
-}
-
-.about {
-    font-family: "cambria", sans-serif;
+    padding: 3rem 0;
 
     .section-heading {
         h6 {
@@ -153,7 +150,12 @@ section {
             color: $primary;
         }
     }
+}
 
+.about {
+    font-family: "cambria", sans-serif;
+
+    // find out more button
     a {
         @extend .btn;
         width: 150px;
@@ -166,6 +168,8 @@ section {
     }
 }
 
+
+// Contact Details
 .contact {
     background: $background;
 
@@ -187,17 +191,42 @@ section {
         opacity: 0.5;
     }
 
-    .sub-title {
-        p {
-            text-transform: uppercase;
-            opacity: 1;
-            font-weight: 600;
+    .point-right,
+    .point-left {
+        position: relative;
+        background: white;
+        display: flex;
+    }
+
+    .point-left::before,
+    .point-right::before {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background: inherit;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        z-index: 1;
+    }
+
+    .menu-item {
+        padding: 50px 10px;
+        color: $primary;
+        margin: auto;
+
+        h6 {
+            color: $primary;
+            font-size: 20px;
         }
 
-        h5 {
-            font-family: "Niconne", cursive;
-            color: $primary;
-            font-size: 2rem;
+        h1 {
+            color: $background;
+            font-size: 30px;
+            letter-spacing: 1px;
+            font-family: 'Teko', sans-serif;
+            font-weight: 300;
         }
     }
 }
@@ -213,11 +242,22 @@ footer {
     .navbar-brand {
         max-width: 300px;
     }
+
+
 }
 
 @include breakpoint(md) {
     .btn {
         width: 150px;
+    }
+
+    .point-left::before,
+    .point-right::before {
+        display: none;
+    }
+
+    .menu-item {
+        padding: 50px 20px;
     }
 }
 
@@ -272,5 +312,35 @@ footer {
         &:hover::before {
             transform: scaleX(1);
         }
+    }
+
+    .point-left::before,
+    .point-right::before {
+        display: none;
+    }
+}
+
+@include breakpoint(xl) {
+
+    .point-left::before,
+    .point-right::before {
+        display: block;
+        top: 40% !important;
+        left: initial !important;
+        transform: translate(0, 50%) rotate(45deg) !important;
+    }
+
+    .point-left::before {
+        left: -12px !important;
+    }
+
+    .point-right::before {
+        right: -12px !important;
+    }
+
+    .menu-item .btn {
+        color: #fff !important;
+        background: $primary;
+
     }
 }
