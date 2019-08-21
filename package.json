@@ -4,12 +4,15 @@
   "description": "Buffets in Wigan",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass -w dist/styles -o dist/styles/ --recursive"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/mylesluke/"
   },
   "author": "Myles Luke",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
 }

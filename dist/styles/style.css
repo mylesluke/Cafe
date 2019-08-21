@@ -191,9 +191,9 @@ section {
 }
 
 .contact p {
-  font-size: .7rem;
+  font-size: 1rem;
   font-family: "cambria", sans-serif;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .contact .sub-title p {
@@ -215,7 +215,7 @@ footer {
   font-size: .8rem;
 }
 
-@media (min-width: 567px) {
+@media (max-width: 567px) {
   .navbar-brand {
     max-width: 300px;
   }
