@@ -232,6 +232,11 @@ section {
         z-index: 1;
     }
 
+    .menu-pic:hover {
+        opacity: .7;
+        cursor: pointer;
+    }
+
     // Menu Item Text
     .menu-item {
         padding: 50px 10px;

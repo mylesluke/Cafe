@@ -220,6 +220,11 @@ section .section-heading h1 {
   z-index: 1;
 }
 
+.contact .menu-pic:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
 .contact .menu-item {
   padding: 50px 10px;
   color: #C69963;
