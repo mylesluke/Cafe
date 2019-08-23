@@ -1,5 +1,9 @@
+// Font Imports and Configurations
 @import url('https://fonts.googleapis.com/css?family=Niconne&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Teko:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap');
+
+
 @import 'config';
 @import 'mixins';
 
@@ -11,6 +15,7 @@ p {
     margin: 0;
 }
 
+// The Main Page
 header {
     width: 100%;
     height: 100vh;
@@ -26,6 +31,7 @@ header>.container {
     padding: 0;
 }
 
+// Website Brand (logo)
 .navbar-brand {
     position: absolute;
     width: 100%;
@@ -41,6 +47,7 @@ header>.container {
     }
 }
 
+// Creates the menu
 .hamburger-menu {
     position: fixed;
     top: 25px;
@@ -53,6 +60,7 @@ header>.container {
     cursor: pointer;
     z-index: 99;
 
+    // Icon Styles
     & i {
         font-size: 30px;
         color: $primary;
@@ -73,6 +81,7 @@ header>.container {
     }
 }
 
+// Navigation
 .nav-list {
     position: fixed;
     top: 0;
@@ -96,6 +105,7 @@ header>.container {
     }
 }
 
+// Homepage Text - Welcome
 .hero-text {
     position: absolute;
     top: 45%;
@@ -109,6 +119,7 @@ header>.container {
     }
 }
 
+// Overall Button Style
 .btn {
     width: 100px;
     padding: 5px 0 !important;
@@ -116,6 +127,7 @@ header>.container {
     position: relative;
     overflow: hidden;
 
+    // Gives the button that sheen effect
     &::before {
         content: "";
         position: absolute;
@@ -137,6 +149,8 @@ section {
     padding: 3rem 0;
 
     .section-heading {
+
+        // Sub-title Text - Discover, Our Tasty Food
         h6 {
             text-transform: uppercase;
             font-weight: 300;
@@ -145,6 +159,7 @@ section {
             line-height: 0;
         }
 
+        // Title Text - What we do, The Menu
         h1 {
             font-family: "Niconne", cursive;
             color: $primary;
@@ -152,6 +167,7 @@ section {
     }
 }
 
+// What We Do...
 .about {
     font-family: "cambria", sans-serif;
 
@@ -173,11 +189,13 @@ section {
 .contact {
     background: $background;
 
+    // Icons - Time, Maps, Phone
     i {
         color: $primary;
         padding: 1rem;
     }
 
+    // Main Text
     h4 {
         font-size: 1rem;
         font-family: "copperplate Gothic", sans-serif;
@@ -185,11 +203,13 @@ section {
 
     }
 
+    // Opening Times, Address, Phone No.
     p {
         font-size: 1rem;
         font-family: "cambria", sans-serif;
         opacity: 0.5;
     }
+
 
     .point-right,
     .point-left {
@@ -198,6 +218,7 @@ section {
         display: flex;
     }
 
+    // Menu Item Arrow Creation
     .point-left::before,
     .point-right::before {
         content: "";
@@ -211,16 +232,19 @@ section {
         z-index: 1;
     }
 
+    // Menu Item Text
     .menu-item {
         padding: 50px 10px;
         color: $primary;
         margin: auto;
 
+        // Prices
         h6 {
             color: $primary;
             font-size: 20px;
         }
 
+        // Headers - Buffet One...
         h1 {
             color: $background;
             font-size: 30px;
@@ -231,6 +255,7 @@ section {
     }
 }
 
+// Website Footer
 footer {
     color: $primary;
     background: $background;
@@ -238,6 +263,94 @@ footer {
     font-size: .8rem;
 }
 
+
+// Buffet Overlay
+#overlay, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(0);
+}
+
+
+.content {
+    background: white;
+    padding: 1.5rem;
+}
+
+.overlayImg {
+    img {
+        border-radius: 40px;
+        transform: rotate(-5deg);
+        padding: 1rem;
+    }
+}
+
+.buffet {
+
+    // Description
+    h5 {
+        text-transform: uppercase;
+        font-family: "poppins", sans-serif;
+        font-size: .8rem;
+        border-top: 1px solid $primary;
+        border-bottom: 1px solid $primary;
+        padding: 1rem;
+        letter-spacing: 3px;
+    }
+
+    // Buffet Type
+    h4 {
+        text-transform: uppercase;
+        font-family: "poppins", sans-serif;
+        letter-spacing: 2px;
+    }
+
+    // Sub-title
+    p {
+        font-size: .8rem;
+    }
+
+    // Sub-title (ham-turkey-cheese)
+    .sub-text {
+        font-style: italic;
+        font-size: .8rem;
+    }
+
+    // Buffet Items
+    ul {
+        padding: 1rem;
+        list-style: none;
+        font-size: .8rem;
+    }
+
+    // Buffet Price
+    h6 {
+        font-family: "copperplate+gothic";
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-bottom: 1.5rem;
+        font-size: .8rem;
+    }
+
+    // Phone Number
+    a {
+        background: $primary;
+        letter-spacing: 1px;
+        color: white;
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+}
+
+// Responsive for Different Devices
 @include breakpoint(sm) {
     .navbar-brand {
         max-width: 300px;

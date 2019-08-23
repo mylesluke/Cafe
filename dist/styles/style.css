@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Niconne&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Teko:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap");
 a {
   color: #fff !important;
 }
@@ -243,6 +244,80 @@ footer {
   background: #101D2C;
   font-family: "cambria", san-serif;
   font-size: .8rem;
+}
+
+#overlay, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  cursor: pointer;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.content {
+  background: white;
+  padding: 1.5rem;
+}
+
+.overlayImg img {
+  border-radius: 40px;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  padding: 1rem;
+}
+
+.buffet h5 {
+  text-transform: uppercase;
+  font-family: "poppins", sans-serif;
+  font-size: .8rem;
+  border-top: 1px solid #C69963;
+  border-bottom: 1px solid #C69963;
+  padding: 1rem;
+  letter-spacing: 3px;
+}
+
+.buffet h4 {
+  text-transform: uppercase;
+  font-family: "poppins", sans-serif;
+  letter-spacing: 2px;
+}
+
+.buffet p {
+  font-size: .8rem;
+}
+
+.buffet .sub-text {
+  font-style: italic;
+  font-size: .8rem;
+}
+
+.buffet ul {
+  padding: 1rem;
+  list-style: none;
+  font-size: .8rem;
+}
+
+.buffet h6 {
+  font-family: "copperplate+gothic";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 1.5rem;
+  font-size: .8rem;
+}
+
+.buffet a {
+  background: #C69963;
+  letter-spacing: 1px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
 }
 
 @media (max-width: 576px) {

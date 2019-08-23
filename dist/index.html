@@ -31,7 +31,7 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#menu">Menu</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -91,7 +91,7 @@
             </div>
 
             <div class="container-fluid p-0">
-                <div class="section-heading my-5 text-center" data-aos="flip-up">
+                <div class="section-heading my-5 text-center" data-aos="fade-up">
                     <h4 class="text-white">Our Tasty Food</h4>
                     <h1 class="display-4">The Menu</h1>
                 </div>
@@ -105,7 +105,7 @@
                         <div class="menu-item">
                             <h1>Buffet One</h1>
                             <h6>£3.00</h6>
-                            <a href="#" class="btn mt-3 d-none d-xl-block">Learn More</a>
+                            <button onclick="on1()" class="btn d-none d-xl-block">Learn More</button>
                         </div>
                     </div>
                     <!-- Column  #2 -->
@@ -116,7 +116,7 @@
                         <div class="menu-item">
                             <h1>Buffet Two</h1>
                             <h6>£4.00</h6>
-                            <a href="#" class="btn mt-3 d-none d-xl-block">Learn More</a>
+                            <button onclick="on2()" class="btn d-none d-xl-block">Learn More</button>
                         </div>
                     </div>
                     <!-- Column  #3 -->
@@ -127,7 +127,7 @@
                         <div class="menu-item">
                             <h1>Buffet Three</h1>
                             <h6>£5.00</h6>
-                            <a href="#" class="btn mt-3 d-none d-xl-block">Learn More</a>
+                            <button onclick="on3()" class="btn d-none d-xl-block">Learn More</button>
                         </div>
                     </div>
                 </div> <!-- End of Row #1-->
@@ -142,7 +142,7 @@
                         <div class="menu-item">
                             <h1>Buffet Four</h1>
                             <h6>£6.50</h6>
-                            <a href="#" class="btn mt-3 d-none d-xl-block">Learn More</a>
+                            <button onclick="on4()" class="btn d-none d-xl-block">Learn More</button>
                         </div>
                     </div>
                     <!-- Column  #5 -->
@@ -153,7 +153,7 @@
                         <div class="menu-item">
                             <h1>Children's Buffet</h1>
                             <h6>£2.95</h6>
-                            <a href="#" class="btn mt-3 d-none d-xl-block">Learn More</a>
+                            <button onclick="on5()" class="btn d-none d-xl-block">Learn More</button>
                         </div>
                     </div>
                     <!-- Column  #6 -->
@@ -164,19 +164,178 @@
                         <div class="menu-item">
                             <h1>Hot Pot Supper</h1>
                             <h6>£3.95</h6>
-                            <a href="#" class="btn mt-3 d-none d-xl-block">Learn More</a>
+                            <button onclick="on6()" class="btn d-none d-xl-block">Learn More</button>
                         </div>
                     </div>
                 </div> <!-- End of Row #2-->
             </div> <!-- End of Container-fluid -->
         </section>
 
+        <!-- Buffet 1 Menu -->
+        <div id="overlay" onclick="off1()" class="d-flex justify-content-center col-12 align-items-center">
+            <div class="row content">
+                <div class="overlayImg col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./images/menu/buffet-1.jpg" class="img-fluid" alt="buffet1">
+                </div>
+                <div class="buffet col-md-6 text-center">
+                    <h5>Description</h5>
+                    <h4>Buffet One</h4>
+                    <p>Assorted Sandwiches on Brown and White Bread</p>
+                    <span class="sub-text">Ham - Turkey - Cheese</span>
+                    <ul class="items">
+                        <li>Tuna Mayo on Open Barmcakes</li>
+                        <li>Sausage Rolls</li>
+                        <li>Pork Pies</li>
+                        <li>Cocktail Sausages</li>
+                        <li>Salad Platter</li>
+                        <li>Crisps</li>
+                    </ul>
+                    <h6>£3.00 Per Head</h6>
+                    <a href="tel:07702469968">Call 07702 469968 To Order</a>
+                </div>
+            </div>
+        </div>
 
+        <!-- Buffet 2 Menu -->
+        <div id="overlay2" onclick="off2()" class="d-flex justify-content-center col-12 align-items-center">
+            <div class="row content">
+                <div class="overlayImg col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./images/menu/buffet-2.jpg" class="img-fluid" alt="buffet2">
+                </div>
+                <div class="buffet col-md-6 text-center">
+                    <h5>Description</h5>
+                    <h4>Buffet Two</h4>
+                    <p>Assorted Sandwiches on Brown and White Bread</p>
+                    <span class="sub-text">Ham - Turkey - Cheese</span>
+                    <ul class="items">
+                        <li>Tuna Mayo on Open Barmcakes</li>
+                        <li>Quiche</li>
+                        <li>Sausage Rolls</li>
+                        <li>Pork or Meat Pies</li>
+                        <li>Cocktail Sausages</li>
+                        <li>Chicken Drumbsticks</li>
+                        <li>Salad Platter</li>
+                        <li>Coleslaw</li>
+                        <li>Crisps</li>
+                    </ul>
+                    <h6>£4.00 Per Head</h6>
+                    <a href="tel:07702469968">Call 07702 469968 To Order</a>
+                </div>
+            </div>
+        </div>
+        <!-- Buffet 3 Menu -->
+        <div id="overlay3" onclick="off3()" class="d-flex justify-content-center col-12 align-items-center">
+            <div class="row content">
+                <div class="overlayImg col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./images/menu/buffet-3.jpg" class="img-fluid" alt="buffet3">
+                </div>
+                <div class="buffet col-md-6 text-center">
+                    <h5>Description</h5>
+                    <h4>Buffet Three</h4>
+                    <p>Assorted Sandwiches on Brown and White Bread</p>
+                    <span class="sub-text">Ham - Turkey - Cheese</span>
+                    <ul class="items">
+                        <li>Tuna Mayo on Open Barmcakes</li>
+                        <li>Egg Mayo on Open Barmcakes</li>
+                        <li>Quiche</li>
+                        <li>Sausage Rolls</li>
+                        <li>Pork or Meat Pies</li>
+                        <li>Savoury Eggs</li>
+                        <li>Cocktail Sausages</li>
+                        <li>Chicken Drumbsticks</li>
+                        <li>Salad Platter</li>
+                        <li>Coleslaw</li>
+                        <li>Potato Salad</li>
+                        <li>Pasta Dish</li>
+                        <li>Crisps</li>
+                    </ul>
+                    <h6>£5.00 Per Head</h6>
+                    <a href="tel:07702469968">Call 07702 469968 To Order</a>
+                </div>
+            </div>
+        </div>
+        <!-- Buffet 4 Menu -->
+        <div id="overlay4" onclick="off4()" class="d-flex justify-content-center col-12 align-items-center">
+            <div class="row content">
+                <div class="overlayImg col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./images/menu/buffet-4.jpg" class="img-fluid" alt="buffet4">
+                </div>
+                <div class="buffet col-md-6 text-center">
+                    <h5>Description</h5>
+                    <h4>Buffet Four</h4>
+                    <p>Assorted Sandwiches on Brown and White Bread</p>
+                    <span class="sub-text">Ham - Turkey - Beef - Cheese</span>
+                    <ul class="items">
+                        <li>Tuna Mayo on Open Barmcakes</li>
+                        <li>Egg Mayo on Open Barmcakes</li>
+                        <li>Sausage Rolls</li>
+                        <li>Pork or Meat Pies</li>
+                        <li>Quiche</li>
+                        <li>Vol-au-Vents</li>
+                        <li>Savoury Eggs</li>
+                        <li>Chicken Drumbsticks</li>
+                        <li>Cocktail Sausages</li>
+                        <li>Seafood Platter</li>
+                        <li>Salad Platter</li>
+                        <li>Pasta Dish</li>
+                        <li>Potato Salad</li>
+                        <li>Coleslaw</li>
+                        <li>Crisps</li>
+                        <li>Gateau</li>
+                        <li>Cheesecake</li>
+                    </ul>
+                    <h6>£6.50 Per Head</h6>
+                    <a href="tel:07702469968">Call 07702 469968 To Order</a>
+                </div>
+            </div>
+        </div>
+        <!-- Buffet 5 Menu -->
+        <div id="overlay5" onclick="off5()" class="d-flex justify-content-center col-12 align-items-center">
+            <div class="row content">
+                <div class="overlayImg col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./images/menu/buffet-5.jpg" class="img-fluid" alt="buffet5">
+                </div>
+                <div class="buffet col-md-6 text-center">
+                    <h5>Description</h5>
+                    <h4>Children's Buffet</h4>
+                    <p>Assorted Sandwiches on White Bread</p>
+                    <span class="sub-text">Ham - Cheese- Egg Mayo</span>
+                    <ul class="items">
+                        <li>Sausage Rolls</li>
+                        <li>Cocktail Sausages</li>
+                        <li>Pork Pies</li>
+                        <li>Pizza Slices</li>
+                        <li>Chicken Nuggets</li>
+                        <li>Crisps</li>
+                        <li>Assorted Jellies</li>
+                        <li>Assorted Cakes</li>
+                    </ul>
+                    <h6>£2.95 Per Head</h6>
+                    <a href="tel:07702469968">Call 07702 469968 To Order</a>
+                </div>
+            </div>
+        </div>
+        <!-- Buffet 6 Menu -->
+        <div id="overlay6" onclick="off6()" class="d-flex justify-content-center col-12 align-items-center">
+            <div class="row content">
+                <div class="overlayImg col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./images/menu/buffet-6.jpg" class="img-fluid" alt="buffet6">
+                </div>
+                <div class="buffet col-md-6 text-center">
+                    <h5>Description</h5>
+                    <h4>Hot Pot Supper</h4>
+                    <ul class="items">
+                        <li>Hot Pot</li>
+                        <li>Crusty Bread</li>
+                        <li>Red Cabbage</li>
+                    </ul>
+                    <h6>£3.95 Per Head</h6>
+                    <a href="tel:07702469968">Call 07702 469968 To Order</a>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="text-center py-4">Sue's Tasties | &copy; 2019</footer>
-
-
-
 
     <script src="https://kit.fontawesome.com/9c46d07164.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -194,6 +353,7 @@
     <script>
         AOS.init();
     </script>
+
 </body>
 
 </html>
