@@ -1,10 +1,18 @@
-// Open and Close Menu
+
 $(function () {
+    // Open and Close Menu
     $('.hamburger-menu').on('click', function () {
         $('.toggle').toggleClass('open');
         $('.nav-list').toggleClass('open');
     });
+    // When Link in Menu is Clicked, Close the Menu
+    $('.nav-link').on('click', function () {
+        $('.toggle').toggleClass('open');
+        $('.nav-list').toggleClass('open');
+    });
 });
+
+
 
 // Buffet 1
 function on1() {
