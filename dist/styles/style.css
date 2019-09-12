@@ -220,6 +220,11 @@ section .section-heading h1 {
   z-index: 1;
 }
 
+.contact .menu-pic {
+  width: 100%;
+  height: 100%;
+}
+
 .contact .menu-pic:hover {
   opacity: .7;
   cursor: pointer;
@@ -251,7 +256,12 @@ footer {
   font-size: .8rem;
 }
 
-#overlay, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6 {
+#overlay,
+#overlay2,
+#overlay3,
+#overlay4,
+#overlay5,
+#overlay6 {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -325,9 +335,15 @@ footer {
   text-transform: uppercase;
 }
 
+.buffet .item-list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (max-width: 576px) {
   .navbar-brand {
-    max-width: 300px;
+    top: 100px;
   }
 }
 

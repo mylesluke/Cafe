@@ -232,9 +232,15 @@ section {
         z-index: 1;
     }
 
-    .menu-pic:hover {
-        opacity: .7;
-        cursor: pointer;
+    // Ensures Menu Picture is filled within container
+    .menu-pic {
+        width: 100%;
+        height: 100%;
+
+        &:hover {
+            opacity: .7;
+            cursor: pointer;
+        }
     }
 
     // Menu Item Text
@@ -270,7 +276,12 @@ footer {
 
 
 // Buffet Overlay
-#overlay, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6{
+#overlay,
+#overlay2,
+#overlay3,
+#overlay4,
+#overlay5,
+#overlay6 {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -353,15 +364,18 @@ footer {
         padding: 1rem;
         text-transform: uppercase;
     }
+
+    // Used for long item lists
+    .item-list {
+        justify-content: center;
+    }
 }
 
 // Responsive for Different Devices
 @include breakpoint(sm) {
     .navbar-brand {
-        max-width: 300px;
+        top: 100px;
     }
-
-
 }
 
 @include breakpoint(md) {
@@ -459,6 +473,5 @@ footer {
     .menu-item .btn {
         color: #fff !important;
         background: $primary;
-
     }
 }
